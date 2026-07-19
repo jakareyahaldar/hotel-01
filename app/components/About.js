@@ -17,10 +17,10 @@ export default function About(){
                     </div>
                     <div className="relative min-h-[400px]">
                         <Image 
-                            src="/images/about1.jfif"
+                            src="/images/about1.jpg"
                             fill={true}
                             className="object-cover"
-                            alt="lll"
+                            alt="our room"
                         />
                     </div>
                 </div>

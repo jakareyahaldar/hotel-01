@@ -1,3 +1,4 @@
+import BookNowBtn from "./BookNowBtn"
 
 
 const image_config = [
@@ -13,11 +14,12 @@ export default function Rooms(){
             
             {image_config.map((image)=>{
                 return(
-                    <div className="overflow-hidden relative">
+                    <div key={image.path} className="overflow-hidden relative group">
                         <div className="absolute top-5 left-5 md:top-30 md:left-30 z-10 text-white backdrop-blur-xl p-5 rounded-2xl">
                             <h4 className="md:text-2xl font-bold">From $400</h4>
                             <h2 className="md:text-4xl text-xl font-bold">Royel Suite</h2>
                         </div>
+                        <BookNowBtn />
                         <img src={image.path} className="w-full hover:scale-125 transition" />
                     </div>
                 )

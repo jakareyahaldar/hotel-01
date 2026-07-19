@@ -36,7 +36,7 @@ export default function SideBar(){
         className="h-dvh w-[300px] md:w-[400px] bg-amber-400 fixed z-[100] flex justify-center items-center">
             <FontAwesomeIcon onClick={ChengeIsMenu} className="absolute top-10 right-10  rounded-full hover:text-blue-600 hover:scale-125" icon={faXmark} style={{ width: "14px", height: "14px" }} />
             <nav className="flex flex-col gap-5 text-xl font-bold">
-                {nav_config.map( item => <Link key={item.path} className={`${pathName === item.path && "underline"} hover:underline underline-offset-2`} href={item.path}>{item.name}</Link> )}
+                {nav_config.map( item => <Link onClick={ChengeIsMenu} key={item.path} className={`${pathName === item.path && "underline"} hover:underline underline-offset-2`} href={item.path}>{item.name}</Link> )}
             </nav>
         </motion.div>
     )

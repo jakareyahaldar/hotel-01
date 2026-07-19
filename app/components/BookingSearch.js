@@ -15,7 +15,7 @@ export default function BookingSearch() {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto p-8 bg-white border border-gray-200 shadow-sm font-sans">
+    <div className="w-full max-w-5xl mx-auto p-8 py-32   font-sans">
       <form onSubmit={handleSearch} className="space-y-6">
         
         {/* Top Row: Dates and Guests */}

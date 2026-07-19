@@ -11,7 +11,7 @@ export default function Navbar(){
     const [,ChengeMenu] = getIsMenu()
 
     return (
-        <header className='h-10 p-10 px-20 w-dvw flex justify-between fixed z-50 text-white bg-[#00000049]'>
+        <header className='h-10 p-10 px-20 w-dvw flex justify-between fixed z-50 text-white'>
             <div className='flex gap-4 items-center'>
                 <FontAwesomeIcon onClick={ChengeMenu} icon={faBars} style={{ width: "14px" }} />
                 <button className='hover:underline'>Book Now</button>

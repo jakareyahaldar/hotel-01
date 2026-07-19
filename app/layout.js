@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased text-[14px]`}
     >
       
-      <body className="min-h-full">
+      <body className="min-h-full overflow-x-hidden">
         <SideMenuContextProvider>
           <SideBar />
           <Navbar />

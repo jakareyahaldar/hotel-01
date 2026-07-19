@@ -2,6 +2,7 @@ import About from "./components/About";
 import BookingSearch from "./components/BookingSearch";
 import Hero from "./components/Hero";
 import Rooms from "./components/Rooms";
+import VideoComponent from "./components/VideoComponent";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <BookingSearch />
       <Rooms />
       <About />
+      <VideoComponent />
     </main>
   )
 }

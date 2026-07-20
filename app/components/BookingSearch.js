@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+
 
 export default function BookingSearch() {
   const [checkIn, setCheckIn] = useState('');
@@ -11,11 +13,13 @@ export default function BookingSearch() {
 
   const handleSearch = (e) => {
     e.preventDefault();
+    toast.error("Search feature not implimented.")
     console.log({ checkIn, checkOut, adults, children, location });
   };
 
   return (
     <div className="w-full max-w-5xl mx-auto p-8 py-32   font-sans">
+      <Toaster />
       <form onSubmit={handleSearch} className="space-y-6">
         
         {/* Top Row: Dates and Guests */}

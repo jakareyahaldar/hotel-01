@@ -1,8 +1,13 @@
+import Magnet from "@/AnimationComponent/Magnet";
+
+
 export default function(){
     return(
         <div className="w-full relative">
             <div className="absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center">
-                <h2 className="md:text-2xl hover:border-[#7ec5c500] p-2 border-[1px] uppercase hover:bg-blue-700 hover:scale-110 text-white rounded-md transition">Make an online Reservation</h2>
+                <Magnet padding={100} disabled={false} magnetStrength={2}>
+                    <p className="p-4 border-2 rounded-md uppercase border-blue-600 text-white md:text-2xl backdrop-blur-xl">Make an online Reservation!</p>
+                </Magnet>
                 <p className="md:text-2xl mt-3 text-white">or +88015634326</p>
             </div>
             <video 

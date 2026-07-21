@@ -13,11 +13,11 @@ const nav_config = [
 
     { path: "/", name: "Home" },
     { path: "/rooms", name: "Our Rooms" },
-    { path: "/bar", name: "Restaurants & Bar" },
-    { path: "/about", name: "About Us" },
+    { path: "/res-bar", name: "Restaurants & Bar" },
+    { path: "/about-us", name: "About Us" },
     { path: "/gallary", name: "Gallery" },
     { path: "/contact", name: "Contact" },
-    { path: "/tac", name: "Terms and Conditions" },
+    { path: "/conditions", name: "Terms and Conditions" },
 ]
 
 

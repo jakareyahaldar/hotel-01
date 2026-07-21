@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function About(){
     return(
-        <div className="p-10 lg:px-96 w-full flex flex-col items-center gap-20 ">
-            <h2 className="text-3xl font-bold">About Us</h2>
+        <div className="p-10 py-20 lg:px-96 w-full flex flex-col items-center gap-20 ">
+            
 
             {/*about container*/}
             <div className="w-full ">

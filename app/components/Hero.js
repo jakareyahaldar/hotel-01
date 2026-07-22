@@ -10,19 +10,19 @@ const SLIDES = [
     id: 1,
     title: "Opulent Retreat",
     subtitle: "Renowned, deeply relaxing, and rich in minerals.",
-    bgImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80", 
+    bgImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784715506/552506787_122119731950966799_6457546689319655953_n_iyyuq0.jpg", 
   },
   {
     id: 2,
     title: "Luxury Defined",
     subtitle: "Experience world-class hospitality and comfort.",
-    bgImage: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1920&q=80",
+    bgImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714897/bed-5_qxkplk.jpg",
   },
   {
     id: 3,
     title: "Serene Spaces",
     subtitle: "A perfect blend of modern design and tranquility.",
-    bgImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80",
+    bgImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784715507/561339712_122124380954966799_4798082669804800009_n_drlyot.jpg",
   },
 ];
 

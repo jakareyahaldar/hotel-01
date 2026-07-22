@@ -2,10 +2,30 @@ import BookNowBtn from "./BookNowBtn"
 
 
 const image_config = [
-    {room: "Royel Suite 01", price_range: "400", alt: "Image 01", path: "/images/room-1.jpg"},
-    {room: "Royel Suite 02", price_range: "300", alt: "Image 02", path: "/images/room-2.jpg"},
-    {room: "Royel Suite 03", price_range: "200", alt: "Image 03", path: "/images/room-3.jpg"},
-    {room: "Royel Suite 04", price_range: "300", alt: "Image 04", path: "/images/room-4.jpg"},
+    { 
+        room: "Royel Suite 01", 
+        price_range: "400", 
+        alt: "Image 01", 
+        path: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714897/bed-3_wuzhyx.jpg" 
+    },
+    { 
+        room: "Royel Suite 02", 
+        price_range: "400", 
+        alt: "Image 02", 
+        path: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714897/bed-5_qxkplk.jpg" 
+    },
+    { 
+        room: "Royel Suite 03", 
+        price_range: "400", 
+        alt: "Image 03", 
+        path: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714898/bed-2_wskuva.jpg" 
+    },
+    { 
+        room: "Royel Suite 04", 
+        price_range: "400", 
+        alt: "Image 04", 
+        path: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714897/bed-4_ecdof4.jpg" 
+    },
 ]
 
 export default function Rooms(){

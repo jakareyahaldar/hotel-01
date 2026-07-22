@@ -7,12 +7,20 @@ import {AnimatePresence, motion} from "framer-motion"
 
 const image_config = [
     {
-        name: "image-1",
-        path: '/images/picture-1.jpg'
+        name: "night view",
+        path: 'https://res.cloudinary.com/b3knhi8f/image/upload/v1784715507/561339712_122124380954966799_4798082669804800009_n_drlyot.jpg'
     },
     {
-        name: "image-2",
-        path: '/images/picture-2.jpg'
+        name: "reciption",
+        path: 'https://res.cloudinary.com/b3knhi8f/image/upload/v1784715506/550355148_122119732010966799_480650542691936709_n_g1neph.jpg'
+    },
+    {
+        name: "bath",
+        path: 'https://res.cloudinary.com/b3knhi8f/image/upload/v1784715509/587155482_122131391258966799_2591914371173112810_n_pqdce9.jpg'
+    },
+    {
+        name: "tarris",
+        path: 'https://res.cloudinary.com/b3knhi8f/image/upload/v1784715518/596634882_122134192370966799_3099785312354654093_n_yqnr1f.jpg'
     },
 ]
  

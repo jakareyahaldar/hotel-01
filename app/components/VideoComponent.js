@@ -11,8 +11,9 @@ export default function(){
                 <p className="md:text-2xl mt-3 text-white">or +88015634326</p>
             </div>
             <video 
+            className="w-full"
             autoPlay={true} muted loop
-            src="https://res.cloudinary.com/b3knhi8f/video/upload/v1784539188/16091277_1920_1080_24fps_wfwqfy.mp4"></video>
+            src="https://res.cloudinary.com/b3knhi8f/video/upload/v1784716897/AQMolaIDHrjvg9HVCD2pV5cClDYJxEf5UZwPKj-4ZFeamIBzEfQbOkyxvQmmRLBTVUZ6yGtXIuXkKmLaWpQUxvz0bT9fEyeoZ5vGI9AInwRXcw_l1zfn4.mp4"></video>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import About from "./components/About";
+import About from "./components/CardWithImageAndText";
 import BookingSearch from "./components/BookingSearch";
 import Hero from "./components/Hero";
 import Rooms from "./components/Rooms";

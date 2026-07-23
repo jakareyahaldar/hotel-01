@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Rooms from "./components/Rooms";
 import VideoComponent from "./components/VideoComponent";
 import CardWithImageAndText from "./components/CardWithImageAndText";
+import LocationOnMap from "./components/LocationOnMap";
 
 
 
@@ -32,6 +33,7 @@ export default function Home() {
       <Rooms />
       <CardWithImageAndText config={about_config} />
       <VideoComponent />
+      <LocationOnMap />
     </main>
   )
 }

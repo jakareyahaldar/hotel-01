@@ -1,4 +1,5 @@
 import CardWithImageAndText from "../components/CardWithImageAndText";
+import LocationOnMap from "../components/LocationOnMap";
 import PageHeaderWithImage from "../components/PageHeaderWithImage";
 
 
@@ -23,6 +24,7 @@ export default function AboutUs(){
         <section>
             <PageHeaderWithImage heading="About us" subHeading="you can read about us." />
             <CardWithImageAndText config={config} />
+            <LocationOnMap />
         </section>
     )
 }

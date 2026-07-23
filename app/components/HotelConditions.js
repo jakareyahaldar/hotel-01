@@ -47,7 +47,7 @@ const HotelConditions = () => {
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
           Hotel Stay Conditions & Rules
         </h2>
-        <p className="mt-2 text-sm sm:text-base text-slate-600">
+        <p className="mt-2 text-sm sm:text-base text-slate-600 xl:text-xl">
           Please review our terms of stay to ensure a seamless and safe experience for all guests.
         </p>
       </div>
@@ -68,10 +68,10 @@ const HotelConditions = () => {
                   0{item.id}
                 </span>
               </div>
-              <h3 className="text-base font-semibold text-slate-900 mb-2">
+              <h3 className="text-base font-semibold text-slate-900 mb-2 xl:text-2xl">
                 {item.title}
               </h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm text-slate-600 leading-relaxed xl:text-xl">
                 {item.details}
               </p>
             </div>
@@ -80,8 +80,8 @@ const HotelConditions = () => {
       </div>
 
       {/* Footer Note */}
-      <div className="mt-8 rounded-lg bg-amber-50 p-4 border border-amber-200 text-xs sm:text-sm text-amber-900">
-        <strong className="font-semibold">Need assistance or special accommodations?</strong> Please contact the front desk ahead of your arrival.
+      <div className="mt-8 rounded-lg bg-amber-50 p-4 border border-amber-200 text-xs sm:text-sm text-amber-900 xl:text-xl">
+        <strong className="font-semibold ">Need assistance or special accommodations?</strong> Please contact the front desk ahead of your arrival.
       </div>
     </section>
   );

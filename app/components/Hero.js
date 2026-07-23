@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, User, Phone } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 // Mock data based on your image
 const SLIDES = [
   {
     id: 1,
-    title: "Opulent Retreat",
-    subtitle: "Renowned, deeply relaxing, and rich in minerals.",
+    title: "Heritage Stay",
+    subtitle: "A modern hotel offering comfort, safety & elegance in Bagerhat’s heritage zone.",
     bgImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784715506/552506787_122119731950966799_6457546689319655953_n_iyyuq0.jpg", 
   },
   {
@@ -27,6 +27,7 @@ const SLIDES = [
 ];
 
 export default function HeroSlider() {
+  const router = useRouter()
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Auto-play functionality (changes slide every 5 seconds)
@@ -79,7 +80,7 @@ export default function HeroSlider() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
             >
-              <button className="group flex items-center space-x-2 text-xs font-semibold tracking-[0.2em] uppercase border-b-2 border-white/60 pb-1 hover:border-white transition">
+              <button onClick={()=> router.push("/search-room")} className="group flex items-center space-x-2 text-xs font-semibold tracking-[0.2em] uppercase border-b-2 border-white/60 pb-1 hover:border-white transition">
                 <span className="w-4 h-[2px] bg-white group-hover:w-6 transition-all" />
                 <span>Book Now</span>
               </button>

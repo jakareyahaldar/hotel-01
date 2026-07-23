@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CardWithImageAndText({config=[]}){
     return(
-        <div className="p-10 py-20 lg:px-96 w-full flex flex-col items-center gap-20 ">
+        <div className="p-10 py-20 md:px-20 lg:px-30 xl:px-90 w-full flex flex-col items-center gap-20 ">
             
 
             {/*about container*/}
@@ -20,7 +20,7 @@ export default function CardWithImageAndText({config=[]}){
                                     <Image 
                                         src={item.image}
                                         fill={true}
-                                        className="object-cover"
+                                        className="object-cover rounded-2xl"
                                         alt="our room"
                                     />
                                 </div>

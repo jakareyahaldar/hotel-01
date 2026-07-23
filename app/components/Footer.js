@@ -39,10 +39,10 @@ export default function Footer(){
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-between mt-10 text-sm opacity-75">
                 <p >&copy; 2025 Grand Palace Hotel & Resorts - by Aco Infosys</p>
                 <nav className=" flex gap-5">
-                    <a href="">Home</a>
-                    <a href="">Our Rooms</a>
-                    <a href="">About us</a>
-                    <a href="">Contact</a>
+                    <a className="hover:underline" href="/">Home</a>
+                    <a className="hover:underline" href="/rooms">Our Rooms</a>
+                    <a className="hover:underline" href="/about-us">About us</a>
+                    <a className="hover:underline" href="/contact">Contact</a>
                 </nav>
             </div>
 

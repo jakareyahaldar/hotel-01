@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PageHeaderWithImage from "../components/PageHeaderWithImage";
 import { faMailBulk, faMessage } from "@fortawesome/free-solid-svg-icons";
+import LocationOnMap from "../components/LocationOnMap";
 
 export default function Contact(){
     return(
@@ -40,6 +41,8 @@ export default function Contact(){
 
                 </form>
             </div>
+
+            <LocationOnMap />
 
         </section>
     )

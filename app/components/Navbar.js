@@ -30,8 +30,8 @@ export default function Navbar(){
             </div>
             <Image
                 src={logo} 
-                className='absolute right-10 md:right-auto top-3 md:top-10 md:left-1/2 md:-translate-1/2 h-14 w-14'
-                alt='jjj' />
+                className='absolute right-10 md:right-auto top-1 md:top-[60px] md:left-1/2 md:-translate-1/2 md:h-[100px] md:w-[100px] h-[70px] w-[70px]'
+                alt='Brand Logo' />
 
             <div className='hidden md:flex gap-4 items-center'>
                 <div className='flex gap-2 items-center'>

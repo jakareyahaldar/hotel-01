@@ -44,7 +44,7 @@ export default function Navbar(){
             </div>
             <Image
                 src={logo} 
-                className={` absolute right-10 md:right-auto top-1 md:left-1/2 md:-translate-1/2 ${!isHeroVisible ? "w-[60px] h-[60px] top-9" : "md:h-[100px] md:w-[100px] h-[70px] w-[70px] md:top-[60px]" }`}
+                className={` absolute right-10 md:right-auto top-1 md:left-1/2 md:-translate-1/2 ${!isHeroVisible ? "w-[60px] h-[60px] top-1 md:top-9" : "md:h-[100px] md:w-[100px] h-[70px] w-[70px] md:top-[60px]" }`}
                 alt='Brand Logo' />
 
             <div className='hidden md:flex gap-4 items-center'>

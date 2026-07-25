@@ -7,16 +7,16 @@ export default function Footer(){
                 <div>
                 <h4 className="mb-6 uppercase font-bold">Our Address</h4>
                 <ul className="opacity-90">
-                    <li className="font-bold">Grand Place Dhaka</li>
-                    <li>22 Kakrail Road, Dhaka-1000,<br/> Bangladesh.</li>
+                    <li className="font-bold">Heritage Stay Bagerhat</li>
+                    <li>37, Khan Jahan Ali Road, Shaltala, Bagerhat Sadar<br/> Bangladesh.</li>
                 </ul>
             </div>
             <div>
                 <h4 className="mb-6 uppercase font-bold">Reservation</h4>
                 <ul className="opacity-90">
                     <li>Bagerhat</li>
-                    <li>+880154646464</li>
-                    <li>+880154646464</li>
+                    <li>+8801322607171</li>
+                    <li>+8801322607171</li>
                 </ul>
             </div>
             <div>

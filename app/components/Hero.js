@@ -79,10 +79,15 @@ export default function HeroSlider() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
+              className="flex gap-10"
             >
               <button onClick={()=> router.push("/search-room")} className="group flex items-center space-x-2 text-xs font-semibold tracking-[0.2em] uppercase border-b-2 border-white/60 pb-1 hover:border-white transition">
                 <span className="w-4 h-[2px] bg-white group-hover:w-6 transition-all" />
                 <span>Book Now</span>
+              </button>
+              <button onClick={()=> window.location.assign("tel:+8801322607171")} className="group flex items-center space-x-2 text-xs font-semibold tracking-[0.2em] uppercase border-b-2 border-white/60 pb-1 hover:border-white transition">
+                <span className="w-4 h-[2px] bg-white group-hover:w-6 transition-all" />
+                <span>Call Now</span>
               </button>
             </motion.div>
           </div>

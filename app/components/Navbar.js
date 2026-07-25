@@ -13,7 +13,7 @@ import { useEffect, useRef, useState } from 'react'
 export default function Navbar(){
     const navRef = useRef()
     const router = useRouter()
-    const [isHeroVisible, setHeroVisible] = useState()
+    const [isHeroVisible, setHeroVisible] = useState(true)
     const [,ChengeMenu] = getIsMenu()
 
 

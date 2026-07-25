@@ -39,7 +39,7 @@ export default function PageHeaderWithImage({ heading, subHeading }){
         },[])
      
         return(
-                <div className="w-full h-[550px]  relative">
+                <div id="hero" className=" w-full h-[550px]  relative">
                     <div className="absolute w-full h-full flex flex-col justify-center items-center z-30 text-white bg-[#00000073]">
                         <h3 className="md:text-6xl text-3xl font-bold">{heading}</h3>
                         <br />

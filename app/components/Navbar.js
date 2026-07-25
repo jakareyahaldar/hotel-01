@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import logo from "../../public/logo.png"
 import { getIsMenu } from '@/context/SideMenuContext'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import toast, { Toaster } from 'react-hot-toast';
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Navbar(){
-    const navRef = useRef()
+    const pathname = usePathname()
     const router = useRouter()
     const [isHeroVisible, setHeroVisible] = useState(true)
     const [,ChengeMenu] = getIsMenu()
@@ -31,12 +31,12 @@ export default function Navbar(){
         observer.observe(hero)
 
         return ()=> observer.disconnect()
-    },[])
+    },[pathname])
 
 
 
     return (
-        <header ref={navRef} className={`${!isHeroVisible ? "bg-amber-950" : ""} transition-all h-10 p-10 px-20 w-dvw flex justify-between fixed z-50 text-white`}>
+        <header className={`${!isHeroVisible ? "bg-amber-950" : ""} transition-all h-10 p-10 px-20 w-dvw flex justify-between fixed z-50 text-white`}>
             <Toaster />
             <div className='flex gap-4 items-center'>
                 <FontAwesomeIcon onClick={ChengeMenu} icon={faBars} style={{ width: "14px" }} />

@@ -39,7 +39,7 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black select-none">
+    <div id="hero" className="relative w-full h-screen overflow-hidden bg-black select-none">
 
       {/* --- SLIDE ANIMATION ENGINE --- */}
       <AnimatePresence mode="wait">

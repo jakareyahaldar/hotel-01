@@ -8,11 +8,12 @@ import { getIsMenu } from '@/context/SideMenuContext'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import toast, { Toaster } from 'react-hot-toast';
+import { useEffect, useRef, useState } from 'react'
 
 export default function Navbar(){
-
+    const navRef = useRef()
     const router = useRouter()
-
+    const [isHeroVisible, setHeroVisible] = useState()
     const [,ChengeMenu] = getIsMenu()
 
 
@@ -20,9 +21,22 @@ export default function Navbar(){
         toast.error("Login feature not devloped yet.")
     }
 
+    useEffect(()=>{
+        if(!window) return
+        const hero = document.querySelector("#hero")
+        if(!hero) return
+        const observer = new IntersectionObserver(([entry])=>{
+            setHeroVisible(entry.isIntersecting)
+        })
+        observer.observe(hero)
+
+        return ()=> observer.disconnect()
+    },[])
+
+
 
     return (
-        <header className='h-10 p-10 px-20 w-dvw flex justify-between fixed z-50 text-white'>
+        <header ref={navRef} className={`${!isHeroVisible ? "bg-amber-950" : ""} transition-all h-10 p-10 px-20 w-dvw flex justify-between fixed z-50 text-white`}>
             <Toaster />
             <div className='flex gap-4 items-center'>
                 <FontAwesomeIcon onClick={ChengeMenu} icon={faBars} style={{ width: "14px" }} />
@@ -30,7 +44,7 @@ export default function Navbar(){
             </div>
             <Image
                 src={logo} 
-                className='absolute right-10 md:right-auto top-1 md:top-[60px] md:left-1/2 md:-translate-1/2 md:h-[100px] md:w-[100px] h-[70px] w-[70px]'
+                className={` absolute right-10 md:right-auto top-1 md:left-1/2 md:-translate-1/2 ${!isHeroVisible ? "w-[60px] h-[60px] top-9" : "md:h-[100px] md:w-[100px] h-[70px] w-[70px] md:top-[60px]" }`}
                 alt='Brand Logo' />
 
             <div className='hidden md:flex gap-4 items-center'>

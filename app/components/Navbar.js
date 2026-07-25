@@ -54,7 +54,7 @@ export default function Navbar(){
                 </div>
                 <div className='flex gap-2 items-center'>
                     <FontAwesomeIcon icon={faPhone} style={{ width: "14px" }} />
-                    <Link className='hover:underline' href={"tel:+8801234567890"} >+8801234567890</Link>
+                    <Link className='hover:underline' href={"tel:+8801322607171"} >+8801322-607171</Link>
                 </div>
             </div>
 

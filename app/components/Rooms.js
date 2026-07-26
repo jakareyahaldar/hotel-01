@@ -1,5 +1,5 @@
 import BookNowBtn from "./BookNowBtn"
-
+import rooms from "@/public/roomsData"
 
 const image_config = [
     { 
@@ -32,15 +32,15 @@ export default function Rooms(){
     return(
         <section className=" bg-amber-950 grid md:grid-cols-2">
             
-            {image_config.map((image)=>{
+            {rooms.map((room)=>{
                 return(
-                    <div key={image.alt} className="overflow-hidden relative group">
+                    <div key={room.title} className="overflow-hidden relative group">
                         <div className="absolute top-5 left-5 md:top-30 md:left-30 z-10 text-white backdrop-blur-xl p-5 rounded-2xl">
-                            <h4 className="md:text-2xl font-bold">{image.price_range} tk</h4>
-                            <h2 className="md:text-4xl text-xl font-bold">{image.room}</h2>
+                            <h4 className="md:text-2xl font-bold">{room.price} tk</h4>
+                            <h2 className="md:text-4xl text-xl font-bold">{room.title}</h2>
                         </div>
-                        <BookNowBtn />
-                        <img src={image.path} className="w-full hover:scale-125 transition" />
+                        <BookNowBtn path={room.slug} />
+                        <img src={room.heroImage} className="w-full hover:scale-125 transition" />
                     </div>
                 )
             })}

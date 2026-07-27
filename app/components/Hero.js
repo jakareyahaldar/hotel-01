@@ -3,6 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 // Mock data based on your image
 const SLIDES = [
@@ -111,6 +114,13 @@ export default function HeroSlider() {
             />
           </button>
         ))}
+      </div>
+
+
+      <div className="absolute bottom-20 left-25 text-white text-2xl  flex gap-5 z-20">
+        <Link className="hover:-translate-y-2 transition-all" target="_blank" href="https://www.facebook.com/HeritageStayBagerhat?locale=da_DK"><FontAwesomeIcon icon={faFacebook} /></Link>
+        <Link className="hover:-translate-y-2 transition-all" target="_blank" href="https://www.instagram.com/heritage.stay"><FontAwesomeIcon icon={faInstagram} /></Link>
+        <Link className="hover:-translate-y-2 transition-all" target="_blank" href="https://api.whatsapp.com/send?phone=%2B8801322607171"><FontAwesomeIcon icon={faWhatsapp} /></Link>
       </div>
 
     </div>

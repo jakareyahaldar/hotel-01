@@ -20,6 +20,7 @@ export default async function RoomDetails({params}) {
       {/* HERO */}
 
       <section
+        id="hero"
         className="relative h-[65vh] bg-cover bg-center"
         style={{
           backgroundImage: `url(${room.heroImage})`,
@@ -77,7 +78,7 @@ export default async function RoomDetails({params}) {
             </p>
 
             <h2 className="mt-2 text-5xl font-bold text-gray-900">
-              ${room.price}
+              BDT {room.price}
             </h2>
 
             <BookNowButtonRed />

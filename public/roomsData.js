@@ -4,7 +4,6 @@ import {
   Maximize,
   MapPin,
   Eye,
-  ChevronRight,
 } from "lucide-react";
 
 
@@ -44,7 +43,7 @@ Whether you're visiting for business or leisure, every detail has been thoughtfu
       },
       {
         icon: <MapPin size={18} />,
-        label: "Rangpur",
+        label: "Bagerhat",
       },
     ],
 
@@ -101,6 +100,7 @@ Whether you're visiting for business or leisure, every detail has been thoughtfu
         slug: "1",
         subtitle: "Great for Business Trip",
         heroImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714897/bed-3_wuzhyx.jpg",
+        price: "500"
     },
     {
         ...FullObj,
@@ -108,6 +108,7 @@ Whether you're visiting for business or leisure, every detail has been thoughtfu
         slug: "2",
         subtitle: "Great for Business Trip",
         heroImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714897/bed-5_qxkplk.jpg",
+        price: "600"
     },
     {
         ...FullObj,
@@ -115,6 +116,7 @@ Whether you're visiting for business or leisure, every detail has been thoughtfu
         slug: "3",
         subtitle: "Great for Business Trip",
         heroImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714898/bed-2_wskuva.jpg",
+        price: "550"
     },
     {
         ...FullObj,
@@ -122,6 +124,7 @@ Whether you're visiting for business or leisure, every detail has been thoughtfu
         slug: "4",
         subtitle: "Great for Business Trip",
         heroImage: "https://res.cloudinary.com/b3knhi8f/image/upload/v1784714897/bed-4_ecdof4.jpg",
+        price: "400"
     },
   ]
 

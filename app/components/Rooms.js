@@ -36,7 +36,7 @@ export default function Rooms(){
                 return(
                     <div key={room.title} className="overflow-hidden relative group">
                         <div className="absolute top-5 left-5 md:top-30 md:left-30 z-10 text-white backdrop-blur-xl p-5 rounded-2xl">
-                            <h4 className="md:text-2xl font-bold">{room.price} tk</h4>
+                            <h4 className="md:text-2xl font-bold">BDT {room.price}</h4>
                             <h2 className="md:text-4xl text-xl font-bold">{room.title}</h2>
                         </div>
                         <BookNowBtn path={room.slug} />

@@ -117,7 +117,7 @@ export default function HeroSlider() {
       </div>
 
 
-      <div className="absolute bottom-20 left-25 text-white text-2xl  flex gap-5 z-20">
+      <div className="absolute bottom-20  md:left-25 left-10 text-white text-2xl  flex gap-5 z-20">
         <Link className="hover:-translate-y-2 transition-all" target="_blank" href="https://www.facebook.com/HeritageStayBagerhat?locale=da_DK"><FontAwesomeIcon icon={faFacebook} /></Link>
         <Link className="hover:-translate-y-2 transition-all" target="_blank" href="https://www.instagram.com/heritage.stay"><FontAwesomeIcon icon={faInstagram} /></Link>
         <Link className="hover:-translate-y-2 transition-all" target="_blank" href="https://api.whatsapp.com/send?phone=%2B8801322607171"><FontAwesomeIcon icon={faWhatsapp} /></Link>

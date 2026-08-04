@@ -35,7 +35,7 @@ export default function Rooms(){
             {rooms.map((room)=>{
                 return(
                     <div key={room.title} className="overflow-hidden relative group">
-                        <div className="absolute top-5 left-5 md:top-30 md:left-30 z-10 text-white backdrop-blur-xl p-5 rounded-2xl">
+                        <div className="absolute top-5 left-5 md:top-30 md:left-30 z-10 text-white backdrop-blur-md p-5 rounded-2xl">
                             <h4 className="md:text-2xl font-bold">BDT {room.price}</h4>
                             <h2 className="md:text-4xl text-xl font-bold">{room.title}</h2>
                         </div>

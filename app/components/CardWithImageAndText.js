@@ -11,7 +11,7 @@ export default function CardWithImageAndText({config=[]}){
                 {
                     config?.map((item,index)=>{
                         return(
-                            <div key={item.title} className="w-full grid md:grid-cols-2 gap-10  ">
+                            <div key={item.title} className="w-full grid md:grid-cols-2 gap-10 text-center ">
                                 <div className={index%2 === 0 ? "order-2" : ""}>
                                     <h3 className="text-4xl mb-10 font-bold">{item?.title}</h3>
                                     <p className="text-xl">{item?.description}</p>

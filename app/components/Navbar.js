@@ -24,7 +24,10 @@ export default function Navbar(){
     useEffect(()=>{
         if(!window) return
         const hero = document.querySelector("#hero")
-        if(!hero) return
+        if(!hero){
+            setHeroVisible(false)
+            return
+        }
         const observer = new IntersectionObserver(([entry])=>{
             setHeroVisible(entry.isIntersecting)
         })
